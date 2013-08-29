@@ -4,3 +4,6 @@
 local_settings.py
 env/*
 *.sqlite3
+*.egg*
+coverage.xml
+pep8.txt

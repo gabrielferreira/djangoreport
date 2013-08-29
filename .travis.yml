@@ -4,4 +4,6 @@ python:
 # command to install dependencies
 install: "pip install -r config/requirements.txt --use-mirrors"
 # # command to run tests
+env:
+  - DJANGO_VERSION=1.5.2 DJANGO_SETTINGS_MODULE="settings"
 script: nosetests

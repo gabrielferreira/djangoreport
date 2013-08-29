@@ -34,8 +34,8 @@ setup(
         'Programming Language :: Python',
         'Topic :: Internet :: WWW/HTTP',
     ],
-    test_suite='setuptest.SetupTestSuite',
-    tests_require=(
-        'django-setuptest',
-    ),
+    # test_suite='setuptest.SetupTestSuite',
+    # tests_require=(
+    #     'django-setuptest',
+    # ),
 )

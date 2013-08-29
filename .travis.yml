@@ -6,4 +6,4 @@ install: "pip install -r config/requirements.txt --use-mirrors"
 # # command to run tests
 env:
   - DJANGO_SETTINGS_MODULE="settings"
-script: ./setup.sh
+script: "make it-rain"

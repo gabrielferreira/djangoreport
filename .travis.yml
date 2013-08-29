@@ -7,4 +7,4 @@ install: "pip install -r config/requirements.txt --use-mirrors"
 # env:
   # - DJANGO_SETTINGS_MODULE="settings"
 # env: DB=sqlite3
-python setup.py test
+script: python setup.py test

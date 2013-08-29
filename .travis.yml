@@ -6,6 +6,4 @@ install: "pip install -r config/requirements.txt --use-mirrors"
 # # command to run tests
 env:
   - DJANGO_SETTINGS_MODULE="settings"
-script: python manage.py syncdb --noinput
-        python manage.py migrate
-        python manage.py runserver
+script: ./setup.sh

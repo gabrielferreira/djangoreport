@@ -14,7 +14,7 @@ setup(
     license = '',
     platforms=['OS Independent'],
     description = "",
-    long_description = read('README.rst'),
+    long_description = read('README.md'),
     author = '',
     author_email = '',
     packages=find_packages(),

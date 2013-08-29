@@ -1,9 +1,9 @@
 # Django settings for djangoreport project.
 # -*- coding: utf-8 -*-
 
-from django.core.management import setup_environ
-from djangoreport import settings
-setup_environ(settings)
+#from django.core.management import setup_environ
+#import settings
+#setup_environ(settings)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG

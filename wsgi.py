@@ -16,12 +16,6 @@ framework.
 
 import os
 
-import sys
-
-root_path = os.path.abspath(os.path.split(__file__)[0])
-sys.path.insert(0, os.path.join(root_path, 'djangoreport'))
-sys.path.insert(0, root_path)
-
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
 # if running multiple sites in the same mod_wsgi process. To fix this, use
 # mod_wsgi daemon mode with each site in its own daemon process, or use

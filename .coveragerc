@@ -1,5 +1,5 @@
 [run]
-omit = */migrations/*
+omit = */migrations/* __init__.py
 source = report
 
 [report]

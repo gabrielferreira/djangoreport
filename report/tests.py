@@ -21,7 +21,6 @@ class ReportTest(TestCase):
         self.assertEqual(unicode(self.report), self.report.name)
 
 
-
 class ReportAdminTest(TestCase):
     def setUp(self):
         self.response = self.client.get('/')

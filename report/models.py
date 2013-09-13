@@ -47,4 +47,4 @@ class Report(models.Model):
 		return queryset
 
 	def __unicode__(self):
-		return sefl.name
+		return self.name

@@ -11,4 +11,3 @@ exclude_lines =
     if __name__ == .__main__.:
     # -*- coding: utf-8 -*-
     pass
-    */tests*

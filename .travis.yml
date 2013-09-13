@@ -9,6 +9,6 @@ install:
 script:
  # - coverage run --omit=*/migrations/* --source=report setup.py test
  # - coverage run --source=report setup.py test
- - coverage run --source=report manage.py test --verbosity=2
+ - coverage run --source=report manage.py test report --verbosity=2
 after_success:
  - coveralls

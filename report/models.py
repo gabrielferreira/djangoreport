@@ -10,9 +10,9 @@ class Report(models.Model):
 	def get_models():
 		_models = ContentType.objects.all()
 		if getattr(settings, 'REPORT_MODEL_INCLUDE', False):
-		    _models = models.filter(name__in=settings.REPORT_MODEL_INCLUDE)
+		    _models = models.filter(name__in=settings.REPORT_MODEL_INCLUDE) #pragma: no cover
 		if getattr(settings, 'REPORT_MODEL_EXCLUDE', False):
-			_models = models.exclude(name__in=settings.REPORT_MODEL_EXCLUDE)
+			_models = models.exclude(name__in=settings.REPORT_MODEL_EXCLUDE) #pragma: no cover
 		return _models
 
 	class Meta:

@@ -16,8 +16,9 @@ class ReportTest(TestCase):
         rep.distinct = True
         rep.save()
 
-    def test_should_output_payment_type_information(self):
+    def test_should_output_report_information(self):
         self.report = Report.objects.filter(name=u'ReportTest').all()[0]
+        self.add_agregates()
         self.assertEqual(unicode(self.report), self.report.name)
 
 

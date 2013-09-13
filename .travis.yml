@@ -1,12 +1,12 @@
 language: python
 python:
-  - 2.7
+ - 2.7
 env:
-  - DJANGO=Django==1.5.2
+ - DJANGO=Django==1.5.2
 install: 
-	- pip install -r requirements.txt --use-mirrors
-	- pip install coveralls --use-mirrors
+ - pip install -r requirements.txt --use-mirrors
+ - pip install coveralls --use-mirrors
 script:
-	- coverage run --source=report setup.py test --settings=test_settings --verbosity=2
+ - coverage run --source=report setup.py test --settings=test_settings --verbosity=2
 after_success:
-  - coveralls
+ - coveralls

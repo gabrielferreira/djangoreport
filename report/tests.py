@@ -4,7 +4,8 @@ from django.utils import timezone
 import datetime
 from report.models import Report
 
-class ReportTests(TestCase):
+
+class ReportTestCase(TestCase):
     def setUp(self):
         self.name = u'ReportTest'
         self.slug = u'RT'
@@ -13,6 +14,6 @@ class ReportTests(TestCase):
         self.distinct = True
         self.favorite = u''
 
-    def test_getmodels(self):
-        """Models in the project"""
-        self.assertGreater(Report.get_models(), 0)
+    def test_should_output_payment_type_information(self):
+        self.report = Report.objects.filter(name=u'ReportTest').all()[0]
+        self.assertEqual(unicode(self.report), self.report.name)

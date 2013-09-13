@@ -45,3 +45,6 @@ class Report(models.Model):
 	        elif display_field.aggregate == "Sum":
 				queryset = queryset.annotate(Sum(display_field.path + display_field.field))
 		return queryset
+
+	def __unicode__(self):
+		return sefl.name

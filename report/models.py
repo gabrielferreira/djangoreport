@@ -6,6 +6,7 @@ from django.contrib.contenttypes.models import ContentType
 AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 
 class Report(models.Model):
+	@staticmethod
 	def get_models():
 		_models = ContentType.objects.all()
 		if getattr(settings, 'REPORT_MODEL_INCLUDE', False):

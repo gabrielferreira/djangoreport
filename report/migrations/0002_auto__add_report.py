@@ -35,10 +35,10 @@ class Migration(SchemaMigration):
 
     def backwards(self, orm):
         # Deleting model 'Report'
-        db.delete_table(u'report_report')
+        db.delete_table(u'report_report') #pragma: no cover
 
         # Removing M2M table for field favorite on 'Report'
-        db.delete_table(db.shorten_name(u'report_report_favorite'))
+        db.delete_table(db.shorten_name(u'report_report_favorite')) #pragma: no cover
 
 
     models = {

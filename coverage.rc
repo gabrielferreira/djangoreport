@@ -1,5 +1,4 @@
 [run]
-source = report
 omit = */migrations/*
 
 [report]
